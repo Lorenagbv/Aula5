@@ -14,7 +14,7 @@ app.get('/alunos/todos', (req, res) => {
 	res.json(alunos)
 })
 
-app.get('/moeda/:valor', valorModel.obterValor)
+app.get('/moeda/:valor_real', valorModel.obterValor)
 
 app.listen(3000, () => {
 	console.log('App rodando!')
